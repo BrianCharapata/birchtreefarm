@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz Wireframe</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<header>
+    	<h2>Home Screen</h2>
+		</header>
+    <div class="outside">
+      <ul class="topline">
+        <li class="first"><b>Home</b></li>
+        <li class="second"><b>Products</b></li>
+        <li class="third"><b>About Us</b></li>
+        <li class="fourth"><b>Login</b></li>
+      </ul>
+      <div class="slideArea">
+	      <div class="farmPicture">
+    	    <b>Sliding Picture</b><br>      	
+    	  </div>
+    	</div>
+      <div class="buttonArea">
+        <input id="scrollLeft" type="submit" value="<" disabled>
+        <input id="scrollRight" type="submit" value=">" disabled>
+      </div>
+      <div class="headLines">
+      		<p>**** NEWS ****</p>
+      </div>      
+    </div>
+    <h2>Multipule Questions Screen</h2>
+    <div class="outside">
+      <ul class="topline">
+        <li class="topleft"><b>Life on the Farm</b></li>
+        <li class="topright"><b>Question: 1/15 Score: 00</b></li>
+      </ul>
+      <div class="questionBox">
+        <form action="">
+          <p class="questionTitle"><b>Why would something work?</b></p>
+          <div class="answerBox">
+            <input type="radio" name="answer" value="First Answer"> First Answer<br>
+          </div>
+          <div class="answerBox">
+            <input type="radio" name="answer" value="Second Answer"> Second Answer<br>
+          </div>
+          <div class="answerBox">
+            <input type="radio" name="answer" value="Third Answer"> Third Answer<br>
+          </div>
+          <div class="answerBox">
+            <input type="radio" name="answer" value="Forth Answer"> Forth Answer<br>
+          </div>
+          <div class="answerBox">
+            <input id="quizAnswer" type="submit" value="Submit" disabled>
+          </div>
+        </form>
+      </div>      
+    </div>
+    <h2>Question Response Screen</h2>
+    <h4>This screen is actually two screens.</h4>
+    <h4>One showing 'Correct.'</h4>
+    <h4>The other showing "That's incorrect"</h4>
+    <div class="outside">
+      <ul class="topline">
+        <li class="topleft"><b>Life on the Farm</b></li>
+        <li class="topright"><b>Question: 00/00 Score: 00</b></li>
+      </ul>
+      <div class="responseBox">
+        <p><b>Correct! or That's Incorrect</b></p>
+        <div class="responseImg">
+          <p>IMAGE</p>
+        </div>
+        <div class="responseDesc">
+          <p>Further description of correct answer.</p>
+        </div>
+        <form class="nextButton" action="">
+
+          <button id="nextQuiz" type="submit" disabled>Next</button>
+        </form>
+      </div>      
+    </div>
+    <h2>Final Quiz Grade Screen</h2>
+    <div class="outside">
+      <ul class="topline">
+        <li class="topleft"><b>Life on the Farm</b></li>
+        <li class="topright"><b>Question: 00/00 Score: 00</b></li>
+      </ul>
+      <div class="responseBox">
+        <p><b>Opinion of how you rated in quiz.</b></p>
+        <div class="responseImg">
+          <p>IMAGE</p>
+        </div>
+        <div class="finalOpinion">
+          <p>You Score XX out of XX.
+          </p>
+        </div>
+        <div class="">
+          <p>Phrase on how you did.</p>
+        </div>
+        <form class="nextButton" action="">
+
+          <button id="nextQuiz" type="submit" disabled>Restart Quiz</button>
+        </form>
+      </div>      
+    </div>
+  </body>
+</html>

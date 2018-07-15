@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    padding-left: 20px;
+    
+}
+
+h2 {
+  padding: 10px;
+}
+/* Start Menu Area */
+div.outside {
+  width: 600px;
+  height: 600px;
+  background: #b3b3b3;
+}
+
+ul {
+  padding-top: 10px;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;  
+  display: inline;
+}
+
+.first, .second, .third, .fourth {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.headLines {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* End Menu Area */
+
+.topline {
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+.centerText {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.slideArea {
+  position: relative;
+  width: auto;
+  height: 300px;
+}
+
+.farmPicture {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding-top: 146px;
+    background: #8c8c8c;
+}
+
+.buttonArea {
+  text-align: center;
+}
+
+#scrollLeft, #scrollRight {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 8px;
+}
+
+/* Question Response Screen Section */
+div.responseBox {
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  height: 50%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+div.responseImg {
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 105px auto;
+  padding-left: 4px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+div.responseDesc {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  margin: 10px 0px 15px;
+  text-align: left;
+}
+
+#nextQuiz {
+  width: 60%;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 30px;
+  margin-bottom: 0
+}
