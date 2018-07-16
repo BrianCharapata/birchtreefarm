@@ -9,6 +9,7 @@
   <body>
   	<header>
     	<h2>Home Screen</h2>
+    	<h4>Picture in the background</h4>
 		</header>
     <div class="outside">
       <ul class="topline">
@@ -22,19 +23,20 @@
     	    <b>Sliding Picture</b><br>      	
     	  </div>
     	</div>
-      <div class="buttonArea">
-        <input id="scrollLeft" type="submit" value="<" disabled>
-        <input id="scrollRight" type="submit" value=">" disabled>
-      </div>
       <div class="headLines">
-      		<p>**** NEWS ****</p>
+      	<p>**** NEWS ****</p>
       </div>      
     </div>
-    <h2>Multipule Questions Screen</h2>
+    <header>
+	    <h2>Products Screen</h2>
+	   	<h4>Picture in the background</h4>
+	  </header>
     <div class="outside">
       <ul class="topline">
-        <li class="topleft"><b>Life on the Farm</b></li>
-        <li class="topright"><b>Question: 1/15 Score: 00</b></li>
+        <li class="first"><b>Home</b></li>
+        <li class="second"><b>Products</b></li>
+        <li class="third"><b>About Us</b></li>
+        <li class="fourth"><b>Login</b></li>
       </ul>
       <div class="questionBox">
         <form action="">
@@ -57,51 +59,65 @@
         </form>
       </div>      
     </div>
-    <h2>Question Response Screen</h2>
-    <h4>This screen is actually two screens.</h4>
-    <h4>One showing 'Correct.'</h4>
-    <h4>The other showing "That's incorrect"</h4>
+    <header>
+	    <h2>About us Screen</h2>
+	   	<h4>Picture in the background</h4>
+	    <h4>Explains who we are and also has a scrolling FAC list</h4>
+		</header>
     <div class="outside">
       <ul class="topline">
-        <li class="topleft"><b>Life on the Farm</b></li>
-        <li class="topright"><b>Question: 00/00 Score: 00</b></li>
+        <li class="first"><b>Home</b></li>
+        <li class="second"><b>Products</b></li>
+        <li class="third"><b>About Us</b></li>
+        <li class="fourth"><b>Login</b></li>
       </ul>
-      <div class="responseBox">
-        <p><b>Correct! or That's Incorrect</b></p>
-        <div class="responseImg">
-          <p>IMAGE</p>
-        </div>
-        <div class="responseDesc">
-          <p>Further description of correct answer.</p>
-        </div>
-        <form class="nextButton" action="">
-
-          <button id="nextQuiz" type="submit" disabled>Next</button>
-        </form>
+      <div class="facBox">
+      	<ul class="facList">
+        	<li>First FAC</li><br>
+        		<p>Info about stuff</p>
+        	<li>Second FAC</li><br>
+        		<p>Info about stuff</p>
+        	<li>Third FAC</li><br>
+        		<p>Info about stuff</p>
+        	<li>Fourth FAC</li><br>
+        		<p>Info about stuff</p>
+      	</ul>
       </div>      
     </div>
-    <h2>Final Quiz Grade Screen</h2>
+    <header>
+	    <h2>Login Screen</h2>
+	   	<h4>Picture in the background</h4>
+	    <h4>Login window appears on top of Home Screen</h4>
+		</header>
     <div class="outside">
       <ul class="topline">
-        <li class="topleft"><b>Life on the Farm</b></li>
-        <li class="topright"><b>Question: 00/00 Score: 00</b></li>
+        <li class="first"><b>Home</b></li>
+        <li class="second"><b>Products</b></li>
+        <li class="third"><b>About Us</b></li>
+        <li class="fourth"><b>Login</b></li>
       </ul>
-      <div class="responseBox">
-        <p><b>Opinion of how you rated in quiz.</b></p>
-        <div class="responseImg">
-          <p>IMAGE</p>
-        </div>
-        <div class="finalOpinion">
-          <p>You Score XX out of XX.
-          </p>
-        </div>
-        <div class="">
-          <p>Phrase on how you did.</p>
-        </div>
-        <form class="nextButton" action="">
+      <div class="loginBox">
+        <form class="loginArea" action="">
+			    <div class="container">
+			      <label for="uname"><b>Username</b></label>
+			      <input type="text" placeholder="Enter Username" name="uname" required>
 
-          <button id="nextQuiz" type="submit" disabled>Restart Quiz</button>
+			      <label for="psw"><b>Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+	          <button id="loginButton" type="submit" disabled>Log In</button>
+			      <label>
+ 			      <input type="checkbox" checked="checked" name="remember"> Remember me
+			      </label>
+			    </div>
+			    <div class="container" style="background-color:#f1f1f1">
+			      <button type="button" class="cancelbtn">Cancel</button>
+			      <span class="psw">Forgot <a href="#">password?</a></span>
+			    </div>
         </form>
+      </div>      
+      <div class="headLines">
+      	<p>**** NEWS ****</p>
       </div>      
     </div>
   </body>

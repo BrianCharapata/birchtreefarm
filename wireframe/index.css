@@ -24,6 +24,7 @@ div.outside {
 }
 
 ul {
+  background-color: #e6e6e6;
   padding-top: 10px;
 }
 
@@ -83,8 +84,45 @@ ul li {
   padding: 10px 8px;
 }
 
-/* Question Response Screen Section */
-div.responseBox {
+/* FAC config area */
+div.facBox {
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  height: 90%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* All site links configs */
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* login box config area */
+div.loginBox {
   border-style: solid;
   border-width: 1px;
   margin-left: 50px;
@@ -95,27 +133,15 @@ div.responseBox {
   padding-top: 10px;
 }
 
-div.responseImg {
-  border-style: solid;
-  border-width: 1px;
-  margin: 0 105px auto;
-  padding-left: 4px;
-  padding-top: 10px;
-  border-radius: 20px;
-}
-
-div.responseDesc {
-  border-style: solid;
-  border-width: 1px;
-  padding: 5px;
-  margin: 10px 0px 15px;
-  text-align: left;
-}
-
-#nextQuiz {
-  width: 60%;
+#loginButton {
+  width: 40%;
   border-style: solid;
   border-width: 2px;
   margin-top: 30px;
   margin-bottom: 0
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
 }
