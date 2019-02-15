@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <title>Birch Tree Farm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Farm beef, pork and vegitables">
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <body class=" w3-light-grey ">
+
+    <!-- Sidebar/menu -->
+    <nav class=" w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" id="mySidebar">
+      <a href="javascript:void()" onclick="w3_close()" class=" w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+      <a href="#" onclick="w3_close()" class=" w3-bar-item w3-button w3-center w3-padding-16 ">PORTFOLIO</a> 
+      <a href="#about" onclick="w3_close()" class=" w3-bar-item w3-button w3-center w3-padding-16 ">ABOUT ME</a> 
+      <a href="#contact" onclick="w3_close()" class=" w3-bar-item w3-button w3-center w3-padding-16 ">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class=" w3-container w3-top w3-white w3-xlarge w3-padding-16 ">
+      <span class=" w3-left w3-padding "><strong>BIRCH TREE FARM</strong></span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class=" w3-overlay w3-animate-opacity " onclick="w3_close()" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class=" w3-main w3-content " style="max-width:1600px;margin-top:83px">
+  
+      <!-- Photo grid -->
+      <div class="w3-row w3-grayscale-min">
+        <div class="w3-quarter">
+          <img src="img/2011_Holly_on_lead_rope.jpg" style="width:100%" onclick="onClick(this)" alt="Holly two years old">
+          <img src="img/20170701_Rasberries.jpg" style="width:100%" onclick="onClick(this)" alt="A fresh batch of raspberrys.">
+          <img src="img/20170618_SpottedPigs.jpg" style="width:100%" onclick="onClick(this)" alt="A batch of our feeder pigs.">
+          <img src="img/20150717_HollyAndCalfRosebud.jpg" style="width:100%" onclick="onClick(this)" alt="Holly and her new calf, Rosebud">
+          <img src="img/20170601_FlowersFromTheDeck.jpg" style="width:100%" onclick="onClick(this)" alt="Holly and her new calf, Rosebud">
+        </div>
+    
+        <div class="w3-quarter">
+          <img src="img/20161018_SamInTheMini2.jpg" style="width:100%" onclick="onClick(this)" alt="Sam in the back of our Mini">
+          <img src="img/20170308_OreoAnd1stBoy.jpg" style="width:100%" onclick="onClick(this)" alt="Oreo and her first kid">
+          <img src="img/20150531_Cat_on_deck.jpg" style="width:100%" onclick="onClick(this)" alt="Our Farm Cat">
+          <img src="img/20150223_BeefQuarterPackages.jpg" style="width:100%" onclick="onClick(this)" alt="One quarter beef packages">
+          <img src="img/20170530_WeanerGoat.jpg" style="width:100%" onclick="onClick(this)" alt="A young goat just weaned.">
+        </div>
+    
+        <div class="w3-quarter">
+          <img src="img/20130520_Lily_and_Holly.jpg" style="width:100%" onclick="onClick(this)" alt="Holly with her calf Lilly">
+          <img src="img/20170601_SummerOnTheDeck2.jpg" style="width:100%" onclick="onClick(this)" alt="A warm day in the sun.">
+          <img src="img/20170515_GreenPlumsAndChicken.jpg" style="width:100%" onclick="onClick(this)" alt="Chickens and a tree full of green plums">
+          <img src="img/20170601_FirstStrawberries.jpg" style="width:100%" onclick="onClick(this)" alt="First strawberries of the season.">
+          <img src="img/20170530_Chicken.jpg" style="width:100%" onclick="onClick(this)" alt="Our egg layers.">
+        </div>
+
+        <div class="w3-quarter">
+          <img src="img/20140702_AquaponicRipeTomatoes.jpg" style="width:100%" onclick="onClick(this)" alt="Aquaponic Tomatoes">
+          <img src="img/20150525_HollyandCowsAtPasture.jpg" style="width:100%" onclick="onClick(this)" alt="Cows grazing in the pasture">
+          <img src="img/20170530_Fatty.jpg" style="width:100%" onclick="onClick(this)" alt="Our Billy Goat by the name of Fatty.">
+          <img src="img/20170912_SamAndSookie.jpg" style="width:100%" onclick="onClick(this)" alt="Holly and her new calf, Rosebud">
+          <img src="img/20131016_Pasture_edge.jpg" style="width:100%" onclick="onClick(this)" alt="Edge of a pature">
+        </div>
+      </div>
+
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+  
+      <div class="w3-black w3-center w3-padding-24">Powered by BECTEK Consulting</div>
+
+    <!-- End page content -->
+    </div>
+
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+  </body>
+</html>
